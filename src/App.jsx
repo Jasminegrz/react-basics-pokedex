@@ -5,10 +5,9 @@ import './App.css'
 import PokemonCard from './components/PokemonCard'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  console.log(PokemonCard)
   return (
-    <div className="App">
+    <div>
       <PokemonCard />
     </div>
   )

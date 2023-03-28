@@ -5,7 +5,6 @@ import './App.css'
 import PokemonCard from './components/PokemonCard'
 
 function App() {
-  console.log(PokemonCard)
   return (
     <div>
       <PokemonCard />

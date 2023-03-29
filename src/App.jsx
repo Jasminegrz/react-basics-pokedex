@@ -2,7 +2,6 @@
 import './App.css'
 import PokemonCard from './components/PokemonCard'
 
-
 function App() {
   const pokemonList = [
     {
@@ -14,7 +13,11 @@ function App() {
       name: "mew",
     },
   ];
-  const pokemon = pokemonList[0]
+  const pokemon = {
+    name: "bulbasaur",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+  };
   
   return (
     <div className="App">

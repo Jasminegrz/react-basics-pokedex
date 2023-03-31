@@ -31,20 +31,23 @@ function App() {
     ];
   
   const [count, pokemonIndex] = useState(0);
-  const handleClickPrevious = () => {
+  const handleClickNext = () => {
     pokemonIndex(count + 1)
   } 
-  const handleClickBack = () => {
+  const handleClickPrevious = () => {
     pokemonIndex(count - 1)
   } 
-  const isPrevious = pokemonIndex < pokemonList.length - 1
-  const isBack = pokemonIndex > 0
+  const isNext = count < pokemonList.length - 1
+  const isPrevious = count > 0
   
   return (
     <div className="App">
+      
       <PokemonCard pokemon={pokemonList[count]}/>
-      <button onClick={handleClickBack}>Précédent</button>
-      <button onClick={handleClickPrevious}>Suivant</button>
+      {isPrevious?<button onClick={handleClickPrevious}>Précédent</button>:null}
+      {isNext? <button onClick={handleClickNext}>Suivant</button>:null}
+      {/* <button onClick={handleClickPrevious}>Précédent</button>
+      <button onClick={handleClickNext}>Suivant</button> */}
     </div>
   )
 }

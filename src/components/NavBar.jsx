@@ -1,4 +1,10 @@
 function NavBar({ count, pokemonIndex, pokemonList }) {
+  const alertPika = () => {
+    if (pokemonList.name == "pikachu") {
+      alert("Pika pikachu !!!");
+    }
+  };
+
   return (
     <nav>
       {pokemonList.map((el, index) => (

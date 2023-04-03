@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import styles from "./PokemonCard.module.css";
 
 function PokemonCard({ pokemon }) {
   return (
-    <figure>
-      <img src={pokemon.imgSrc} alt={pokemon.name} />
+    <figure className={styles.card}>
+      <img src={pokemon.imgSrc} alt={pokemon.name} className={styles.cardImg} />
       <figcaption>{pokemon.name}</figcaption>
     </figure>
   );

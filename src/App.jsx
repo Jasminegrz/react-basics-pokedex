@@ -36,7 +36,6 @@ function App() {
   }, []);
 
   const [count, pokemonIndex] = useState(0);
-
   return (
     <div className="App">
       <NavBar
